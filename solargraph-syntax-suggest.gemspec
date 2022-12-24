@@ -4,7 +4,7 @@ require_relative "lib/solargraph_syntax_suggest/version"
 
 Gem::Specification.new do |spec|
   spec.name                          = "solargraph-syntax-suggest"
-  spec.version                       = Solargraph::Syntax::Suggest::VERSION
+  spec.version                       = SolargraphSyntaxSuggest::VERSION
   spec.authors                       = ["Cameron Kolkey"]
   spec.email                         = ["Cameron.Kolkey@gmail.com"]
 
