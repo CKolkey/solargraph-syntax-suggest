@@ -1,4 +1,4 @@
-# Solargraph::Syntax::Suggest
+# SolargraphSyntaxSuggest
 
 This solargraph plugin leverages the [syntax suggest](https://github.com/ruby/syntax_suggest) gem to provide syntax disagnostic messages.
 
