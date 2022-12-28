@@ -6,13 +6,10 @@ module SolargraphSyntaxSuggest
       io = StringIO.new
       ::SyntaxSuggest.call(source: source.code, io:)
 
-      return [] if io.string.empty?
-
-      report = io.string.lines
-      line_numbers(report).map do
+      line_numbers(io).map do
         diagnostic_message_for_line(
           line: _1,
-          message: report.first.chomp,
+          message: io.string.lines.first.chomp,
           length: source.code.lines[_1].length
         )
       end
@@ -20,10 +17,14 @@ module SolargraphSyntaxSuggest
 
     private
 
-    def line_numbers(report)
-      report.slice(2..)
-            .select { _1.start_with?(">") }
-            .map { _1.split[1].to_i - 1 }
+    def line_numbers(io)
+      return [] if io.string.empty?
+
+      io.string
+        .lines
+        .slice(2..)
+        .select { _1.start_with?(">") }
+        .map { _1.split[1].to_i - 1 }
     end
 
     def diagnostic_message_for_line(line:, message:, length:)
