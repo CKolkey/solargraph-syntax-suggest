@@ -2,6 +2,9 @@
 
 This solargraph plugin leverages the [syntax suggest](https://github.com/ruby/syntax_suggest) gem to provide syntax disagnostic messages.
 
+![image](https://user-images.githubusercontent.com/7228095/209809895-8b66b313-6d64-472b-a780-f02d3d52d257.png)
+
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
