@@ -1,6 +1,6 @@
 # SolargraphSyntaxSuggest
 
-This solargraph plugin leverages the [syntax suggest](https://github.com/ruby/syntax_suggest) gem to provide syntax disagnostic messages.
+This [Solargraph LSP](https://github.com/castwide/solargraph) plugin leverages the [syntax suggest](https://github.com/ruby/syntax_suggest) gem to provide syntax disagnostic messages.
 
 ![image](https://user-images.githubusercontent.com/7228095/209809895-8b66b313-6d64-472b-a780-f02d3d52d257.png)
 
